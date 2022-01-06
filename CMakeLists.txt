@@ -41,4 +41,4 @@ target_link_libraries(
 )
 
 include(GoogleTest)
-gtest_discover_tests(HW1)
+gtest_discover_tests(HW2)
