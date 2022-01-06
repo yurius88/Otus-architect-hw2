@@ -4,7 +4,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 # Set the project name
-project (HW1)
+project (HW2)
 
 # GoogleTest requires at least C++11
 set(CMAKE_CXX_STANDARD 11)
@@ -23,20 +23,19 @@ enable_testing()
 
 # Create a sources variable with a link to all cpp files to compile
 set(SOURCES
-    HomeWork1.cpp
 	test.cpp 
 )
 
 # Add an executable
-add_executable(HW1 ${SOURCES})
+add_executable(HW2 ${SOURCES})
 
 
-include_directories(HW1_headers    
+include_directories(HW2_headers    
         ${PROJECT_SOURCE_DIR}
 )
 
 target_link_libraries(
-  HW1
+  HW2
   gtest
   gtest_main
 )
